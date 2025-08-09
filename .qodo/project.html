@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,0">
+<title>Nova UI Studio</title>
+<link rel="icon" href="assets/dead-tree.png">
+<link rel="stylesheet" href="skeleton.css">
+<link href="https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Syne+Tactile&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    text-align: center;
+    color: white;
+    background-color: #141619;
+    font-family: 'Inter';
+    font-weight: 400;
+}
+span {
+
+    font-family: 'Syne Tactile';
+}
+
+.navbar {
+ padding:5px;
+ background-color: transparent #141619;
+}
+#dropdown{
+
+    background: transparent;
+    border: none;
+    color: #5FA4E6;
+}
+.navbar-elements{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-menu{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 10px;
+    margin-right: 150px;
+    
+
+}
+
+h2{
+    font-family: "Inter";
+    font-size: 56px;
+}
+
+li{
+    margin: 3px 5px;
+    font-size: 19px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar{
+    color: white;
+
+}
+.logo {
+    font-family: "Syne Tactile";
+}
+
+.hero{
+    align-content: center;
+    padding:0px 100px ;
+    background:url("assets/hero/div.png") no-repeat , url("assets/hero/div-2.png") center no-repeat ;
+    
+}
+
+.heroku{
+
+    margin-bottom: 250px;
+
+}
+#hero-button{
+    background:linear-gradient(140deg, #665DCD, #5FA4E6, #D2AB67);
+    width: 276px;
+    height: 58px;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin: 50px;
+    font-size:19px;
+    color: white;
+    border: none;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+#hero-button:hover{
+
+    transform:scale(1.1) ;
+
+}
+
+.centr {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    text-align: center;
+    white-space: normal;  
+    word-wrap: break-word;
+    max-width: 70%;
+}
+
+.card {
+    width: 264px;
+    height: 180px;
+    align-content: center;
+    margin: 5px;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+
+}
+
+p.card{
+    font-size: 18px;
+}
+
+.card:hover{
+    transform:scale(1.1) ;
+}
+
+#bobtwo{
+
+    background: linear-gradient(140deg, #665DCD, #5FA4E6, #D2AB67);
+    border-radius: 5px;
+    
+}
+
+#bobf{
+    border-left: 3px solid transparent;
+    border-image: linear-gradient(to bottom, #5FA4E6, #D2AB67) 0 0 0 1;
+
+}
+
+
+.whatWedo{
+    height: 1050px;
+    word-wrap: break-word;
+    padding: 40px;
+    background:url("assets/what/div-1.png") no-repeat ,url("assets/what/div.png")   ;
+    
+}
+.aligningstuff{
+    display: flex;
+    padding: 100px;;
+    gap: 20px;
+    align-items: flex-start;
+    word-wrap: break-word;
+    justify-content: space-between;
+    
+}
+
+h3{
+    font-size: 36px;
+    font-weight: 400;
+    margin: 0px;
+}
+.aboudi {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    text-align: left;
+    width: 390px;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.an{
+    text-decoration: underline cyan;
+}
+
+.aboudi:hover{
+  transform:scale(1.1) ;
+}
+.partners {
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: url("assets/partners/div.png") no-repeat left;
+}
+
+.partnerlogoscontainers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.log {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background-color: rgb(19, 27, 27);
+   border-radius: 15px;
+   transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    
+}
+.log:hover{
+    transform:scale(1.1) ;    
+}
+.contacts{
+    height: 700px;
+    background: url("assets/contact/div-1.png") no-repeat ,url("assets/contact/div-2.png") right no-repeat ,url("assets/contact/div-3.png") right no-repeat,url("assets/contact/div.png") no-repeat right;
+}
+footer {
+    display: flex;
+    background: transparent #141619;
+    justify-content:space-evenly;
+    padding: 20px;
+    color: white;
+    margin: 10px 0;
+    gap: 20px;
+    border-top: 1px solid #ccc;
+
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+    <section class="hero">
+
+        <nav class="navbar">
+
+            <div class="navbar-elements">
+
+                <a href=""><h1 class="logo">NOVA STUDIO</h1></a>
+            
+                <ul class="navbar-menu">
+                    <li><a href="">about us</a></li>
+                    <li><label>our services</label><select id="dropdown"><option></option></select></li>
+                    <li><a href="">Work with Us</a></li>
+                    <li><a href="">blog</a></li>
+                </ul>
+
+                <a href="">get in touch</a>
+            
+            </div>
+
+        </nav>
+
+        <div class="heroku">
+
+            <h2><span>Designing the Future</span><br>of Digital Experiences</h2>
+
+            <p>We craft intuitive, user-centered interfaces that help brands grow and users feel at home.<br> From product discovery to polished prototypes — we design with purpose.</p>
+            
+            <a href="assets/ri/Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster).mp4"><button id="hero-button">LET'S WORK TOGETHER</button></a>
+
+        </div>
+
+    </section>
+
+    <section class="about">
+
+        <h2><span>about</span> Nova Studio</h2>
+
+        <p>At Nova UI Studio, we believe good design is invisible but powerful.</p> We’re a team of creative strategists, product thinkers,</p><p> and pixel-perfectionists focused on building seamless digital experiences.</p>
+        
+        <div class="card-container">
+
+            <div class="card">
+                <h3><b>8+ Years</b></h3>
+                <p>crafting design solutions</p>
+            </div>
+
+            <div class="card" id="bobtwo">
+                <h3><b>120 +</b></h3>
+                <p>projects across web and mobile</p>
+            </div>
+
+            <div class="card">
+                <h3><b>+24</b></h3>
+                <p>industries we've worked in</p>
+            </div>
+
+            <div class="card" id="bobf">
+                <h3><b>24/7</b></h3>
+                <p>design support and collaboration</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="whatWedo">
+
+        <div class="headsies">
+
+            <h2>What<span> We Do</span></h2>
+
+            <p>turning bald ideas into beautiful,intuitive iterfaces that usres love and buisinesses grow from.</p>
+        
+        </div>
+    
+        <div class="aligningstuff">
+
+            <div class="aboudi">
+
+                <div>
+                    <h3>UI/UX Design for Startups</h3>
+
+                    <p>Bring your idea to life with elegant interfaces, wireframes, and user flows designed for rapid launch and growth.</p>
+                
+                </div>
+                
+                <a href="" class="an">Learn more</a>
+                    
+            </div>
+
+            <div class="aboudi">
+
+                <div>
+
+                    <h3>UX Research for Enterprises</h3>
+
+                    <p>Data-driven design backed by usability tests, journey mapping, and stakeholder interviews to support business decisions.</p>
+                 
+                </div> 
+
+                <a href="" class="an">Learn more</a>
+            
+            </div>
+
+        </div>
+
+    </section>
+    
+    <section class="partners">
+
+        <h2>Our <span>Partners </span>& Friends</h2>
+
+        <div class="partnerlogoscontainers">
+
+            <div class="log" id="log1"><a href="https://www.figma.com/"><img src="assets/partners/figma.svg" alt="Figma"></a></div>
+            <div class="log" id="log2"><a href="https://sketch.io/sketchpad/"><img src="assets/partners/sketch.svg" alt="Sketch" ></a></div>
+            <div class="log" id="log3"><a href="https://www.framer.com/"><img src="assets/partners/xd.svg" alt="Framer" ></a></div>
+            <div class="log" id="log4"><a href="https://www.adobe.com/"><img src="assets/partners/framermotion.svg" alt="adobe" ></a></div>
+        
+        </div>
+
+    </section>
+
+
+
+    <section class="contacts">
+
+        <h2>Contact Us</h2>
+
+        <p>want to build something beautiful toghether?</p>
+        <p>Get in touch to discuss your project or just</p>
+        <p>say hi.</p>
+
+        <button id="hero-button">GET IN TOUCH</button>
+
+    </section>
+
+    <footer>
+
+    <a href="">Nova Studio</a>
+    <a href="">About Us</a>
+    <a href="">Work with Us</a>
+    <a href="">tems and use of privacy policy</a>
+
+    </footer>
+
+</body>
+
+<script>
+
+</script>
+
+</html>
